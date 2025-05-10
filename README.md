@@ -40,6 +40,10 @@ The system architecture is composed of the following pipeline:
 
 ### 🧬 The ZKOSIS Stack
 
+
+https://github.com/user-attachments/assets/e27514a0-2d77-4e95-996c-97439c67e940
+
+
 ```mermaid
 graph TD
     A[🧑‍💻 User Input] --> B[🖥️ MCP Server]
