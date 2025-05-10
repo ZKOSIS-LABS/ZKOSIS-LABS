@@ -21,6 +21,7 @@ ZKOSIS transforms machine learning predictions into on-chain, integrity-proven o
 
 **Verifiable AI. On-chain. Encrypted.**
 
+https://github.com/user-attachments/assets/e27514a0-2d77-4e95-996c-97439c67e940
 ---
 
 
@@ -41,7 +42,6 @@ The system architecture is composed of the following pipeline:
 ### 🧬 The ZKOSIS Stack
 
 
-https://github.com/user-attachments/assets/e27514a0-2d77-4e95-996c-97439c67e940
 
 
 ### 🔁 Step-by-Step Breakdown
