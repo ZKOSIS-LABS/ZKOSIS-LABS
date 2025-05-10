@@ -29,7 +29,7 @@ ZKOSIS transforms machine learning predictions into on-chain, integrity-proven o
     Your browser does not support the video tag. Please visit <a href="/repopo.mp4">this link</a> to watch.
   </video>
   <br/>
-  <em><small>Replace <code>YOUR_VIDEO_URL_OR_PATH_HERE.mp4</code> with your actual video file or URL.</small></em>
+
 </p>
 
 ## ✨ What ZKOSIS Delivers
