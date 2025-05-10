@@ -44,17 +44,6 @@ The system architecture is composed of the following pipeline:
 https://github.com/user-attachments/assets/e27514a0-2d77-4e95-996c-97439c67e940
 
 
-```mermaid
-graph TD
-    A[🧑‍💻 User Input] --> B[🖥️ MCP Server]
-    B --> C[🧠 ezkl Inference]
-    C --> D[🧪 ZK Proof<br/>(Groth16 / PLONK)]
-    D --> E[🛡️ Verifier.sol]
-    E --> F[📜 AttestManager.sol]
-    F --> G[🧾 On-chain Log]
-```
-*<p align="center">Note: The Mermaid diagram above renders best on platforms like GitHub.</p>*
-
 ### 🔁 Step-by-Step Breakdown
 
 - **🧑‍💻 User Input**: Prompts or data samples are submitted to the protocol.
