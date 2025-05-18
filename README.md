@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/d7e9407a-f3a2-44a0-bec8-056f6f497429
 The ZKOSIS protocol operates through an efficient and well-defined pipeline, making AI inference both verifiable and blockchain-integrated:
 
 1. **User Input**: Users submit prompts or data samples to initiate the process.
-2. **MCP Server**: A secure Model Control Plane (MCP) server processes the inference request.
+2. **MCP Server**: A secureModel Context Protocol (MCP) server processes the inference request.
 3. **ezkl Inference**: The AI model executes within a zero-knowledge-compatible framework powered by ezkl.
 4. **Proof Generation**: zk-SNARKs, using either Groth16 or PLONK, are generated to cryptographically validate the computation.
 5. **Verifier.sol**: A Solidity smart contract verifies the proof on-chain, ensuring correctness.
