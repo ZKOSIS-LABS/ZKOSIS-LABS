@@ -2,7 +2,17 @@
 
 # 🛡️ ZKOSIS: Zero-Knowledge AI Attestation for Ethereum
 
-**zkosis.com** is a cutting-edge compute protocol that combines AI inference, zero-knowledge proofs (zk-SNARKs), and smart contract attestation in a modular, trustless architecture. It enables encrypted, on-chain verification of AI-powered predictions, ensuring transparency and privacy.
+We’re not launching additional MCP servers—there’s already a robust collection in operation. Instead, we’re focusing on building the infrastructure layer that allows these existing servers to be seamlessly accessed via our free ZKOSIS client (available at labs.zkosis.com). Think of ZKOSIS as a universal launchpad or gateway, enabling users to remotely connect and interact with any MCP server—no need to self-host or maintain complex setups.
+Key Highlights
+
+    Infrastructure over duplication
+    We leverage the existing MCP server ecosystem rather than expanding it. MCP servers are already widely available across tools and platforms .
+
+    A seamless remote bridge
+    ZKOSIS functions as a unified interface: discover, connect, authorize (OAuth, API keys), and invoke capabilities across any MCP server—all from one client.
+
+    Simplified tool access
+    Whether it's code deployments, cloud operations, or data integration, users get plug‑and‑play MCP functionality without setup hassles
 
 ---
 
