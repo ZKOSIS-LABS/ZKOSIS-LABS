@@ -8,6 +8,7 @@ Key Highlights
     Infrastructure over duplication
     We leverage the existing MCP server ecosystem rather than expanding it. MCP servers are already widely available across tools and platforms .
 
+
     A seamless remote bridge
     ZKOSIS functions as a unified interface: discover, connect, authorize (OAuth, API keys), and invoke capabilities across any MCP server—all from one client.
 
@@ -15,6 +16,7 @@ Key Highlights
     Whether it's code deployments, cloud operations, or data integration, users get plug‑and‑play MCP functionality without setup hassles
 
 ---
+<img width="3839" height="2159" alt="Screenshot 2025-07-17 144434" src="https://github.com/user-attachments/assets/29ec828d-3793-41c2-9972-b89bd5845285" />
 
 ## 🧠 Core Features
 
@@ -28,6 +30,7 @@ Key Highlights
   Every output is anchored on-chain with full integrity, ensuring trustless, encrypted transparency.
 
 ---
+<img width="1446" height="1577" alt="Screenshot 2025-07-17 132608" src="https://github.com/user-attachments/assets/fd4b9eab-315a-4aa6-9d55-c1ae298b5f39" />
 
 ## 🧩 Architecture Overview
 
@@ -142,7 +145,8 @@ npm install @zkosis/evm-mcp-server@1.1.3
 * Follow our Twitter/X, Telegram, and GitBook for updates.
 
 ---
-
+<img width="3829" height="2058" alt="Screenshot 2025-07-17 112205" src="https://github.com/user-attachments/assets/551d7052-95c3-485e-bcb2-fa24cf9d4b9d" />
+<img width="2578" height="1912" alt="Screenshot 2025-07-17 105155" src="https://github.com/user-attachments/assets/bcd55966-33e9-44e3-a7e9-00ce6ec9be48" />
 ## 🛠️ Developer Contribution
 
 We welcome contributors! Here's how to help:
