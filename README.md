@@ -1,59 +1,136 @@
-# ZKOSIS: Verifiable AI Inference on Ethereum
+🛡️ ZKOSIS: Zero‑Knowledge AI Attestation for Ethereum
 
-ZKOSIS is a next-generation compute protocol that brings cryptographically verifiable AI inference to the Ethereum blockchain. By seamlessly integrating zero-knowledge proofs, smart contract attestations, and AI model execution, ZKOSIS offers a modular and trustless architecture. This innovative system transforms machine learning predictions into on-chain, integrity-proven outcomes, leveraging zk-SNARKs and Ethereum Virtual Machine (EVM)-compatible infrastructure for a secure, transparent, and privacy-preserving solution.
+ZKOSIS is a next-gen compute protocol combining AI inference, zk‑SNARK proofs, and smart contract attestation in a modular, trustless architecture. It enables encrypted, on‑chain verification of AI-powered predictions.
+🧠 Core Features
 
----
+    **Model Context Protocol (MCP) Server**
+    Receives user inputs, runs predictive inference, and creates zk‑SNARK proofs (Groth16/PLONK).
+    Proofs are verified and attested via smart contracts on Ethereum.
+    mcpworld+2zkosis.com+2Libraries.io+2
 
-## What ZKOSIS Delivers
+    ZKOSIS API & LLM Integration
+    Seamlessly automates blockchain interactions — from invoking contracts to logging verification events on Etherscan‑compatible explorers.
 
-ZKOSIS provides a robust set of features designed to ensure security, verifiability, and immutability for AI computations:
+    Verifiable On‑Chain AI
+    Every output is anchored on‑chain with full integrity, ensuring trustless, encrypted transparency.
+    Libraries.io+4zkosis.com+4Moralis | Enterprise-Grade Web3 APIs+4
 
-- **Secure Inference Execution**: Full input/output sealing safeguards privacy and security throughout the process.
-- **Zero-Knowledge Proof Generation**: Every AI computation is backed by a zk-SNARK proof, ensuring cryptographic integrity.
-- **On-Chain Validation**: Model execution is validated on Ethereum using `Verifier.sol`, guaranteeing trustless verification.
-- **Integrity Attestation**: `AttestManager.sol` delivers reliable integrity assurances for all outputs.
-- **Immutable Publication**: Results are permanently recorded on the Ethereum blockchain, ensuring transparency and accessibility.
+🧩 Architecture Overview
 
+User Input 
+    ↓
+[MCP Server → ezkl Inference → ZK Proof]
+    ↓
+Verifier.sol + AttestManager.sol
+    ↓
+⛓ On‑chain log (Etherscan‑compatible)
 
-https://github.com/user-attachments/assets/d7e9407a-f3a2-44a0-bec8-056f6f497429
+🚀 Getting Started
+Prerequisites:
 
+    Node.js ≥ 18 or Bun ≥ 1.0
 
----
+    Yarn or npm
 
-## How ZKOSIS Works
+Installation & Setup
 
-The ZKOSIS protocol operates through an efficient and well-defined pipeline, making AI inference both verifiable and blockchain-integrated:
+git clone https://github.com/zkosis/evm-mcp-server.git
+cd evm-mcp-server
 
-1. **User Input**: Users submit prompts or data samples to initiate the process.
-2. **MCP Server**: A secureModel Context Protocol (MCP) server processes the inference request.
-3. **ezkl Inference**: The AI model executes within a zero-knowledge-compatible framework powered by ezkl.
-4. **Proof Generation**: zk-SNARKs, using either Groth16 or PLONK, are generated to cryptographically validate the computation.
-5. **Verifier.sol**: A Solidity smart contract verifies the proof on-chain, ensuring correctness.
-6. **AttestManager.sol**: The verified output is attested and logged for integrity assurance.
-7. **On-Chain Log**: Results are published immutably on the Ethereum blockchain, available for permanent access.
+# Install dependencies
+npm install
 
----
+Running the MCP Server
 
-## Technical Highlights
+    StdIO mode:
 
-ZKOSIS is built on advanced cryptographic and blockchain technologies, offering a high-performance and secure platform:
+npx @zkosis/evm-mcp-server --stdio
 
-- **Model Processing**: Inference is powered by ezkl, a framework optimized for zero-knowledge compatibility.
-- **zk-SNARK Generation**: Supports Groth16 or PLONK algorithms for efficient and secure proof creation.
-- **Solidity Smart Contracts**: Utilizes `Verifier.sol` and `AttestManager.sol` for on-chain verification and attestation.
-- **Ethereum-Native Integration**: Fully compatible with Ethereum, providing proof visibility and gas cost accountability.
+HTTP mode (with Server-Sent Events):
 
----
+    npx @zkosis/evm-mcp-server --http
 
-## Why ZKOSIS
+Supported Chains
 
-ZKOSIS stands out as a pioneering solution for AI and blockchain integration, delivering unmatched benefits:
+Works across 30+ EVM-compatible chains including Ethereum, Optimism, Arbitrum, Base, Polygon, Avalanche, zkSync Era, and more
+Libraries.io
+.
+⚙️ Usage Examples
+Check an ERC20 Token Balance
 
-- **End-to-End Verifiability**: Cryptographic proofs guarantee the integrity of AI predictions from input to output.
-- **Transparent Computations**: Deterministic model execution ensures full transparency without compromising privacy.
-- **Public Attestations**: Private inferences are publicly attested on-chain, balancing confidentiality with trust.
-- **Privacy-Preserving Execution**: Zero-knowledge technology keeps sensitive data secure while enabling verification.
+const res = await mcp.invokeTool("get-token-balance", {
+  tokenAddress: "USDC_contract",
+  ownerAddress: "vitalik.eth",
+  network: "ethereum"
+});
+console.log(res.formatted); // e.g. "1000"
 
----
+Run a Transfer
 
-ZKOSIS redefines the intersection of artificial intelligence and blockchain technology, offering a secure, verifiable, and decentralized framework for the future of AI computations.
+const res = await mcp.invokeTool("transfer-token", {
+  privateKey: "0x…",
+  tokenAddress: "0x…",
+  toAddress: "0x…",
+  amount: "50",
+  network: "polygon"
+});
+console.log(res.txHash);
+
+🔒 Security & Proof
+
+    Private keys are used only for signing and are never stored. Security best practices are followed, including HTTPS and rate‑limiting
+    Libraries.io
+    .
+
+    zk‑SNARK systems (Groth16/PLONK) ensure verifiable, zero‑knowledge attestations.
+
+📦 ZKOSIS NPM Package
+
+Install the EVM MCP Server module:
+
+npm install @zkosis/evm-mcp-server@1.1.3
+
+Current version 1.1.3 released on June 15, 2025
+zkosis.com
+Libraries.io+1mcpworld+1
+.
+🌐 Ecosystem & Impact
+
+    30+ validators and integrations across 40+ blockchains.
+
+    Prototype implementations show ~25% average ROAS uplift
+    apespace.io+4zkosis.com+4Libraries.io+4
+    .
+
+    Public attestation through Etherscan‑compatible logs promotes transparency and accountability.
+
+📚 Documentation & Support
+
+    Detailed documentation on MCP server, API, tools, and resource URIs is available in the NPM package
+    zkosis.com
+    Libraries.io+1mcpworld+1
+    .
+
+    Follow us on Twitter/X, Telegram, and our Gitbook for updates.
+
+🛠️ Developer Contribution
+
+Contributions are welcome! Guidelines:
+
+    Add new chain/network support in src/core/chains.ts
+
+    Register tools in src/core/tools.ts
+
+    Extend services in src/core/services/
+
+    Create PRs for fixes, docs, enhancements
+
+📄 License
+
+MIT license — feel free to use and contribute!
+🚀 Join the Future
+
+Bring encrypted, verifiable AI inference to your dApps with ZKOSIS.
+Explore our GitHub, integrate the MCP server, and lead the next wave of blockchain innovation.
+
+© 2025 ZKOSIS. Privacy Policy available on zkosis.com.
