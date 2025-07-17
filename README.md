@@ -1,6 +1,6 @@
 
 
-# 🛡️ ZKOSIS: Zero-Knowledge AI Attestation for Ethereum
+# 🛡️ ZKOSIS
 
 We’re not launching additional MCP servers—there’s already a robust collection in operation. Instead, we’re focusing on building the infrastructure layer that allows these existing servers to be seamlessly accessed via our free ZKOSIS client (available at labs.zkosis.com). Think of ZKOSIS as a universal launchpad or gateway, enabling users to remotely connect and interact with any MCP server—no need to self-host or maintain complex setups.
 Key Highlights
